@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎯 JavaScript Event Handling & Interactive Elements</h1>
+  </header>
+
+  <section id="events">
+    <h2>Event Handling</h2>
+    <button id="clickBtn">Click Me!</button>
+    <button id="hoverBtn">Hover Over Me!</button>
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+    <button id="secretBtn">Double Click or Long Press Me!</button>
+  </section>
+
+  <section id="interactive">
+    <h2>Interactive Elements</h2>
+    <button id="magicBtn">Change Me!</button>
+
+    <div id="gallery">
+      <img id="galleryImage" src="https://via.placeholder.com/300x200" alt="Gallery">
+      <div>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <div id="tabs">
+      <button class="tab-btn" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+
+      <div class="tab-content" id="tab1">This is Tab 1 content.</div>
+      <div class="tab-content" id="tab2" style="display:none;">This is Tab 2 content.</div>
+      <div class="tab-content" id="tab3" style="display:none;">This is Tab 3 content.</div>
+    </div>
+  </section>
+
+  <section id="formSection">
+    <h2>Form Validation</h2>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

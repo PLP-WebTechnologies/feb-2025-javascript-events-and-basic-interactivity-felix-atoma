@@ -1,0 +1,105 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #4CAF50;
+  font-size: 2rem;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#gallery {
+  text-align: center;
+}
+
+#gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+#tabs {
+  text-align: center;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.tab-content {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  input, button {
+    width: 90%;
+  }
+}
